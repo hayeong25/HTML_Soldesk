@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form tag</title>
+  </head>
+  <body>
+    <!-- form : 웹서버에 정보를 제출하기 위한 양식의 범위 정의 -->
+    <!-- action : 전송한 정보를 처리할 웹페이지의 URL -->
+    <!-- method : 서버로 전송할 http 방식 (GET, POST) -->
+    <!-- GET : 사용자가 작성한 값이 주소창에 표시됨 (기본 웹처리방식) -->
+    <!-- POST : 사용자가 작성한 값이 주소창에 표시되지 않음 (감추고 있는 상태) -->
+    <!-- name : Form 이름 -->
+    <form action="" method="get" name="myform">
+      <!-- 전송할 정보 -->
+      <div>
+        <label for="name">이름</label>
+        <input type="text" name="name" id="name" />
+      </div>
+      <div>
+        <label for="age">나이</label>
+        <input type="text" name="age" id="age" />
+      </div>
+      <input type="submit" value="보내기" />
+    </form>
+  </body>
+</html>

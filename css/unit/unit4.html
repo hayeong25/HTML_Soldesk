@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>em, rem</title>
+    <style>
+      :root {
+        font-size: 13px;
+      }
+      body {
+        font-size: 12px;
+      }
+      .box {
+        background-color: blue;
+        float: left;
+        color: white;
+        text-align: center;
+        margin-right: 20px;
+      }
+      .box_px {
+        width: 160px;
+        height: 160px;
+      }
+      .box_em {
+        width: 10em;
+        height: 10em;
+      }
+      .box_rem {
+        width: 10rem;
+        height: 10rem;
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS 기본 문법</h1>
+    <h2>단위 : em, rem</h2>
+    <div class="wrapper clearfix">
+      <!-- .wrapper.clearfix + 엔터 -->
+      <div class="box box_px">px</div>
+      <div class="box box_em">em</div>
+      <div class="box box_rem">rem</div>
+    </div>
+    <!-- rem은 root element 크기 기준
+        box_em : 16px * 10em
+        box_rem : 16px * 10rem
+
+        :root : 13px
+        box_em : 13px * 10em
+        box_rem : 13px * 10rem
+
+        :root : 13px, body : 12px
+        box_em : 12px * 10em
+        box_rem : 13px * 10rem
+    -->
+  </body>
+</html>

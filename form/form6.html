@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+  </head>
+  <body>
+    <form action="" method="get">
+      <!-- validation : 유효성 검증. 요구한 형식과 사용자가 입력한 값이 다른 경우 검증 -->
+      <!-- form 태그에 novalidate 쓰면 유효성 검증 안 함 -->
+      <!-- required : 무조건 사용자의 입력을 요구 -->
+      <!-- search : 입력창에 X 표시 있음 -->
+      <!-- input:date : 달력이 나타나 특정 날짜 선택 가능 -->
+      <!-- input:datetime-local : 날짜 및 시간 선택 -->
+      <div>
+        <label for="username">username</label>
+        <input type="text" name="username" id="username" required />
+      </div>
+      <div>
+        <label for="email"></label>
+        <input type="email" name="email" id="email" required />
+      </div>
+      <div>
+        <label for="search">search</label>
+        <input type="search" name="search" id="search" />
+      </div>
+      <div>
+        <label for="date1">date1</label>
+        <input type="date" name="date1" id="date1" />
+      </div>
+      <div>
+        <label for="date2">date2</label>
+        <input type="datetime" name="date2" id="date2" />
+      </div>
+      <div>
+        <label for="month">month</label>
+        <input type="month" name="month" id="month" />
+      </div>
+      <div>
+        <label for="time">time</label>
+        <input type="time" name="time" id="time" />
+      </div>
+      <div>
+        <label for="week">week</label>
+        <input type="week" name="week" id="week" />
+      </div>
+      <div>
+        <label for="date3">date3</label>
+        <input type="datetime-local" name="date3" id="date3" />
+      </div>
+      <div>
+        <label for="color">color</label>
+        <input type="color" name="color" id="color" />
+      </div>
+      <div>
+        <!-- tel은 유효성 검증 불가 -->
+        <!-- pattern : 정규표현식 
+            ex) [0-9](3) : 0~9 사이의 숫자 3개 -->
+        <label for="tel">tel</label>
+        <input
+          type="tel"
+          name="tel"
+          id="tel"
+          pattern="[0-9](3)-[0-9](4)-[0-9](4)"
+        />
+      </div>
+      <div>
+        <!-- range : 범위 슬라이더 -->
+        <label for="range">range</label>
+        <input type="range" name="range" id="range" min="1" max="10" step="2" />
+      </div>
+      <div>
+        <label for="number">number</label>
+        <input
+          type="number"
+          name="number"
+          id="number"
+          min="80"
+          max="110"
+          step="5"
+        />
+      </div>
+      <div>
+        <label for="file">파일첨부</label>
+        <input type="file" name="file" id="file" accept="image/png" multiple />
+        <!-- accept="image/png" : 파일첨부 창 뜰 때 png 우선 보이게 -->
+        <!-- 모든 파일 보이게 하려면 "image/*" -->
+        <!-- multiple : 파일 여러 개 첨부 가능 -->
+      </div>
+      <div>
+        <button type="submit">보내기</button>
+      </div>
+    </form>
+  </body>
+</html>

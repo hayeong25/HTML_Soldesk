@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="" method="get">
+      <div>
+        <label for="userid">userid</label>
+        <input type="text" name="userid" id="userid" />
+      </div>
+      <div>
+        <label for="username">username</label>
+        <input type="text" name="username" id="username" />
+      </div>
+      <div>
+        <label for="gender">gender</label>
+        <input type="radio" name="gender" id="gender_m" value="male" />남자
+        <input type="radio" name="gender" id="gender_f" value="female" />여자
+      </div>
+      <div>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+      </div>
+      <div>
+        <!-- select : dropdown list -->
+        <!-- size : dropdown 했을 때 보여지는 요소 개수 -->
+        <!-- multiple : Ctrl 누른 상태로 중복 선택 가능 -->
+        <select name="fruit" id="fruit" size="3" multiple>
+          <option value="apple">사과</option>
+          <option value="banana">바나나</option>
+          <option value="strawberry" selected>딸기</option>
+          <option value="grape">포도</option>
+          <option value="watermelon">수박</option>
+        </select>
+      </div>
+      <div>
+        <!-- submit : form 속성 중 action과 method 지정한 방식에 따라 서버로 전송 -->
+        <!-- reset : form 양식 초기화 -->
+        <!-- button : 새로운 기능 생성할 때 -->
+        <!-- alert : 메시지 창 표시 -->
+        <input type="submit" value="보내기" />
+        <input type="reset" value="처음으로" />
+        <input type="button" value="버튼" onclick="alert('Hello')" />
+      </div>
+      <div>
+        <button type="submit">전송</button>
+        <button type="reset">초기화</button>
+        <button type="button" onclick="alert('Hello')">클릭</button>
+      </div>
+    </form>
+  </body>
+</html>
