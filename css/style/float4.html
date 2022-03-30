@@ -1,0 +1,41 @@
+<!-- float : 배치 (떠 있는 상태) -->
+<!-- clear : float 해제 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: tomato;
+        color: white;
+        font-size: 30px;
+        margin: 10px;
+        float: left;
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both; /* float 해제함으로써 그 다음 요소들은 float의 영향을 받지 않음 */
+      }
+      .box1 {
+        width: 200px;
+        height: 200px;
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="clearfix">
+      <!-- float로 떠야 하는 요소들을 div로 묶음-->
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+    <div class="box1">4</div>
+  </body>
+</html>
