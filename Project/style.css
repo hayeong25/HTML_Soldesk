@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* ------------ Header ------------ */
+.menubar {
+  background-color: skyblue;
+  padding: 0 10px;
+}
+.menubar li {
+  list-style: none;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 15px;
+}
+.menubar .left {
+  float: left;
+}
+.menubar .right {
+  float: right;
+}
+#logo {
+  width: 60px;
+  height: 60px;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* -------------- Main -------------- */
+/* ------------ Carousel ------------ */
+.carousel {
+  border: 1px solid blue;
+  width: 700px;
+  height: 400px;
+  margin: 30px auto;
+}
+
+/* ------------ Coupon ------------ */
+.coupon {
+  border: 1px solid blue;
+  width: 80%;
+  height: 300px;
+  margin: 30px auto;
+}
+
+/* ------------ Menu ------------ */
+
+/* ------------ Login ------------ */
+.container {
+  width: auto;
+  height: 450px;
+  text-align: center;
+}
+.login {
+  border: 1px solid skyblue;
+  width: 300px;
+  height: 150px;
+  text-align: center;
+  margin: 150px auto;
+  padding: 10px;
+}
+.login div {
+  text-align: center;
+  margin: 10px;
+}
+button {
+  background-color: skyblue;
+  border: none;
+}
+
+/* ------------ Register ------------ */
+.register {
+  border: 1px solid skyblue;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  margin: 30px auto;
+  padding: 10px;
+}
+.login div {
+  text-align: center;
+  margin: 10px;
+}
+
+/* ------------ Footer ------------ */
+.footer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.footer li {
+  list-style: none;
+  display: inline-block;
+}
+.footer img {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin: auto 5px;
+}
